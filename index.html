@@ -1,0 +1,82 @@
+<!-- Credits & Sources
+Harry Potter Font: https://www.dafont.com/harry-p.font
+Urbanist Font: https://fonts.google.com/specimen/Urbanist?preview.script=Latn
+
+Hogwarts BG: https://commons.wikimedia.org/wiki/File:Hogwarts-Crest.png
+*GIF was custom created in Canva using the background
+
+Webkit Shadows: https://html-css-js.com/css/generator/box-shadow/
+Favicon Image Source: https://1000logos.net/hogwarts-logo/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="icon" href="Hogwarts Logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <title>Hogwarts Student Adder</title>
+</head>
+
+<body>
+
+    <!-- Centers everything on the page -->
+    <div class="container">
+
+        <!-- Stacks the form card and the result box vertically -->
+        <div class="card-wrapper1">
+
+            <form>
+                <!-- Logo, title, and welcome message -->
+                <div class="header">
+                    <img src="Hogwarts Logo.png" alt="Hogwarts Logo">
+                    <h1>Hogwarts Student Adder</h1>
+                    <p>Welcome to Hogwarts! To add a student in our list, enter the first name and last name!</p>
+                </div>
+
+                <!-- Name fields (main.py reads these by their ids) -->
+                <div class="inputs">
+                    <label for="firstname">First Name</label><br>
+                    <input type="text" id="firstname" placeholder="Harry"><br>
+
+                    <label for="lastname">Last Name</label><br>
+                    <input type="text" id="lastname" placeholder="Potter"><br>
+                </div>
+
+                <!-- Submit button. py-click runs the verify() functipn in main.py file -->
+                <div class="footer">
+                    <button type="button" id="loginBTN" py-click="add">Enter</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card-wrapper2">
+            <div class="header">
+                <div class="output1"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Page footer w/ my details -->
+    <footer>
+        <p>David | Seatwork 1, 10-Sapphire © 2026</p>
+    </footer>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+
+</html>
